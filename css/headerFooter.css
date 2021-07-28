@@ -213,6 +213,7 @@ button.fancy a {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFC887;
+  font-weight: bold;
 }
 button.fancy .top-key {
   height: 2px;
@@ -245,15 +246,15 @@ button.fancy .bottom-key-2 {
   transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 button.fancy:hover {
-  color: white;
-  background: #2B2B2B;
+  color: #000000;
+  background: #FFC887;
 }
 button.fancy:hover::before {
   width: 25px;
-  background: white;
+  background: #000000;
 }
 button.fancy:hover a {
-  color: white;
+  color: #000000;
   padding-left: 80px;
 }
 button.fancy:hover .top-key {
@@ -562,18 +563,22 @@ opacity: 0;
 .menu__body {
   background:black;
   width: 100%;
-  height: 100vh;
+  height: 0vh;
   top: 0;
   display:none;
   position: absolute;
   z-index: 100;
-  padding-top: 140px;
+  /* padding-top: 140px; */
   transition: all .5s;
   opacity: 0;
 }
 .menu__body.show{
   display:block;
   opacity: 1;
+  height: 100vh;
+}
+.menu__body.show ~ .menu__body > ul{
+  height:100%;
 }
 .menu__body > ul{
   flex-direction: column;
@@ -582,8 +587,12 @@ opacity: 0;
   background:black;
   padding: 0;
   margin: 0;
+  height: 0;
   
   
+}
+.menu__body > ul > li:nth-child(1){
+  margin-top: 160px;
 }
   .menu__body > ul > li{
     list-style: none;
@@ -810,28 +819,37 @@ opacity: 0;
 .menu__body {
   background:black;
   width: 100%;
-  height: 100vh;
+  height: 0vh;
   top: 0;
   display:none;
   position: absolute;
   z-index: 100;
-  padding-top: 140px;
+  /* padding-top: 140px; */
   transition: all .5s;
   opacity: 0;
 }
 .menu__body.show{
   display:block;
   opacity: 1;
+  height: 100vh;
+}
+.menu__body.show ~ .menu__body > ul{
+  height: 100%;
 }
 .menu__body > ul{
+  /* padding-top: 140px; */
+  display:flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
   background:black;
   padding: 0;
   margin: 0;
+  height: 0;
   
   
+}.menu__body > ul > li:nth-child(1){
+  margin-top: 160px;
 }
   .menu__body > ul > li{
     list-style: none;
@@ -1072,18 +1090,22 @@ opacity: 0;
 .menu__body {
   background:black;
   width: 100%;
-  height: 100vh;
+  height:0vh;
   top: 0;
   display:none;
   position: absolute;
   z-index: 100;
-  padding-top: 140px;
+  /* padding-top: 140px; */
   transition: all .5s;
   opacity: 0;
 }
 .menu__body.show{
   display:block;
   opacity: 1;
+  height:100vh
+}
+.menu__body.show ~ .menu__body > ul{
+  height:100%;
 }
 .menu__body > ul{
   flex-direction: column;
@@ -1092,8 +1114,12 @@ opacity: 0;
   background:black;
   padding: 0;
   margin: 0;
+  height: 0;
   
   
+}
+.menu__body > ul > li:nth-child(1){
+  margin-top: 160px;
 }
   .menu__body > ul > li{
     list-style: none;

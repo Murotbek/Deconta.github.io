@@ -32,8 +32,8 @@ partnerImages.forEach((item)=>{
    });
 });
 const menuClose = document.querySelector('.menu__close'),
-      menuBody = document.querySelector('.menu__body'),
-      budywell = document.querySelector('.well')
+      menuBody = document.querySelector('.menu__body');
+      budywell = document.querySelector('.well');
       
         menuClose.addEventListener('click', (e)=>{
          if(e.target){
@@ -42,12 +42,12 @@ const menuClose = document.querySelector('.menu__close'),
             menuBody.classList.remove('show');
            setTimeout(()=> menuBody.style.display='none',500);
           
-           well.style.overflow = 'visible';
+           budywell.style.overflow = 'visible';
           }else{
             setTimeout(()=> menuBody.classList.add('show'),1);
             // menuBody.classList.add('show');
             menuBody.style.display='block'
-            well.style.overflow = 'hidden';
+            budywell.style.overflow = 'hidden';
           }
          
           console.log(e.target);

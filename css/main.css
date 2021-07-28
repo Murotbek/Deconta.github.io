@@ -178,15 +178,15 @@ button.fancy .bottom-key-2 {
   transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 button.fancy:hover {
-  color: white;
-  background: #2B2B2B;
+  color: #000000;
+  background: #FFC887;
 }
 button.fancy:hover::before {
   width: 25px;
-  background: white;
+  background: #FFC887;
 }
 button.fancy:hover a {
-  color: white;
+  color: #000000;
   padding-left: 80px;
 }
 button.fancy:hover .top-key {
@@ -427,126 +427,186 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 /* Container Projects */
 .container__projects{
   min-width:1920px;
-  height:100vh;
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  grid-template-rows: 630px 210px;
-  grid-template-areas: 
-  'left-content right-content'
-   'footer footer';
-   padding-top: 50px;
-   padding-bottom: 50px;
-}
-.container__projects__lb{
+  padding-top: 70px;
   padding-left: 75px;
-  grid-area: left-content;
+  padding-right:75px;
+  height:100vh;
+  text-align: center;
   position: relative;
+  /* background-color:black */
 }
-.container__projects__lb > figure{
-  margin-left: -5px;
-  margin-top: 0;
-}
-.container__projects__lb>h1{
-  line-height: 150%;
-  text-transform: uppercase;
-  color: #FFFFFF;
+.projects__logo{
+  width: 78px;
+  margin-left: 0;
+} 
+.slider,.projects__title{display: none;}
+.carousel-3d {
+  padding: 20px;
+  
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  width: 85%;
+  height:640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  /* margin-top: 180px; */
   position: relative;
-  width: 480px;
+  z-index: 2;
 }
-.container__projects__lb>h1:before{
-  position: absolute;
-  content:"";
-  height: 1px;
-  width: 120px;
-  background-color: #FFC887;
-  bottom: -20px;
-  left: 10%;
-
+.carousel-3d > * {
+  flex: 0 0 auto;
 }
-.container__projects__lb > h2{
-  line-height: 150%;
-  margin: 20px 0 20px 0;
-  color: #FFC887;
-}
-.container__projects__lb > p{
-  font-size: 25px;
-  line-height: 150%;
+.carousel-3d figure {
   margin: 0;
-  color: #FFFFFF;
+  width: 1470px;
+  height:540px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  z-index: 1;
 }
-.container__projects__dots{
-  margin-top: 73px;
+.carousel-3d figure div {
+  width: 1470px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
 }
-.container__projects__dots > ul{
-position: relative;
-margin: 0;
-}
-.container__projects__dots > ul > li{
-  width: 420px;
-  height:254px;
-  position:absolute;
-}
-.container__projects__dots > ul > li >img{
-  width:100%;
-  height:100%;
-}
-.container__projects__rb{
-grid-area: right-content;
-position: relative;
-}
-.container__projects__sliders{
+.carousel-3d figure img{
   width: 100%;
   height: 100%;
-  position: relative;
+  box-sizing: border-box;
+  padding: 0;
 }
-.container__projects__sliders > img{
-  width: 100%;
-  height:100%;
-  position:absolute;
-}
-.container__projects__sliders > img:nth-child(3){
-  display:none;
-}
-.container__projects__arrows{
+.carousel-3d figure div:not(:first-of-type),
+.carousel-3d figure img:not(:first-of-type) {
   position: absolute;
-  bottom:0px;
+  left: 0;
+  top: 0;
+}
+.carousel-3d nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+  
+ 
+}
+.carousel-3d nav button {
+  flex: 0 0 auto;
+  width: 140px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #337AB7;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 15px 10px;
+  font-weight: bold;
+  transition: all .3s ease;
+  position:absolute;
+  z-index: 30;
+}
+.carousel-3d nav button:hover {
+  color: #FFF;
+  /* background: #337AB7; */
+}
+.nav.next{
+background:url(/img/project/arrow-right.png) no-repeat;
+background-size: 70% 40%;
+right:10px;
+top: 50%;
+}
+.nav.prev{
+  background:url(/img/project/arrow-left.png) no-repeat;
+  background-size: 70% 40%;
+  left:10px;
+  top: 50%;
+}
+.carousel__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 870px;
+  height:98%;
+  margin-top: 0.5%;
+  margin-bottom: 1.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #252525;
+  box-shadow: 8px 0px 10px rgba(0, 0, 0, 0.3), -8px 0px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 
 }
-.prev, .next{
-  height: 72px;
-  background-color: rgba(51, 51, 51, 0);
-  border: 1px solid white;
-  width: 135px;
-}
-.next{
-  margin-left: -5px;
-}
-.next>img{
-  transform:rotate(180deg);
-}
-.container__projects__footer{
-  grid-area: footer;
-  display:grid;
-  grid-template-columns:2fr 2fr 2fr 2fr 4fr;
-  padding-left: 75px;
+.name__projects{
+  position:relative;
+  margin-top: -50px;
   text-align: center;
+  height: 180px;
+  z-index: 999;
 }
-.container__projects__footer__info{
-  padding-top: 80px;
-  font-weight: 600;
-  font-size: 25px;
+.name__projects > .dots__text{
+  position:absolute;
+  top: 30%;
+  left: 50%;
+  width: 600px;
+  transform: translateX(-50%);
+  opacity: 0;
+  color: white;
+  transition:all .5s ease 0s ;
+}
+.name__projects > .dots__text.active{
+  position:absolute;
+  opacity: 1;
+}
+.dots{
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  width: 654px;
+  margin: 0 auto;
+ 
+  height: 220px;
+  margin-top: 0;
+  bottom: 20px;
+}
+.dots > .dots__number { 
+  display: inline-block;
+  color: white;
+  font-size: 40px;
   line-height: 150%;
-  color: #FFFFFF;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-right: 15px;
+  margin-left: 10px;
+  transition:all 1s;
+
 }
-.container__projects__footer__logo{
-  display:none;
+.dots > button{
+  display:block;
+  width: 40px;
+  height: 2px;
+  margin-bottom: 0px;
+  margin-right: 5px;
+  border: none;
+  transition:all 1s;
 }
-.container__projects__footer_button{
-  border: 1px solid #FFFFFF;
-  padding-top: 60px;
-  height:100%;
-  width: 100%;
+.dots > .dots__number.active{
+  color: #FFC887;
 }
+.dots > button.active{
+  background-color: #FFC887;
+}
+
+
 
 
 /* Partners */
