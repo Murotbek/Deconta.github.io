@@ -514,13 +514,13 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
   /* background: #337AB7; */
 }
 .nav.next{
-background:url(/img/project/arrow-right.png) no-repeat;
+background:url(../img/project/arrow-right.png) no-repeat;
 background-size: 70% 40%;
 right:10px;
 top: 50%;
 }
 .nav.prev{
-  background:url(/img/project/arrow-left.png) no-repeat;
+  background:url(../img/project/arrow-left.png) no-repeat;
   background-size: 70% 40%;
   left:10px;
   top: 50%;
