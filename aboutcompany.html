@@ -8,51 +8,69 @@
   <link rel="stylesheet" href="css/company.css">
   <link rel="stylesheet" href="css/headerFooter.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/media-company.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 </head>
 <body class="well" id="well">
-<header id="header">
-  <div class="header__menu">
-    <nav class="menu__body">
-      <ul>
-        <li>
-          <a href="/index.html">Главная</a>
-        </li>
-        <li>
-          <a href="/aboutcompany.html">О компании</a>
-        </li>
-        
-        <li>
-          <a href="">Проекты</a>
-        </li>
-        
-        <li>
-          <a href="">Контакты</a>
-        </li>
-        
-        <li>
-          <a href="">RU</a>
-        </li>
-        
-      </ul>
-    </nav>
-
-  </div>
-</header>
+  <header id="header">
+    <div class="header__menu">
+      <div class="menu__close ">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="menu__body">
+      
+        <ul>
+          <li>
+            <a href="/index.html">Главная</a>
+          </li>
+          <li>
+            <a href="/aboutcompany.html">О компании</a>
+          </li>
+          
+          <li>
+            <a href="">Проекты</a>
+          </li>
+          
+          <li>
+            <a href="">Контакты</a>
+          </li>
+          
+          <li>
+            <a href="">RU</a>
+          </li>
+          <li class="mobile__nav__li">
+            <a href="">+ 998 33 434 34 44</a>
+          </li>
+          <li class="mobile__nav__li">
+            <a href="">+ 998 33 434 34 44</a>
+          </li>
+          <li class="mobile__nav__li">
+            <a class="menu__logo" href=""><img src="./img/first/Vector.png" alt=""><span>Deconta E&C Group</span> </a>
+          </li>
+          
+        </ul>
+      </nav>
+  
+    </div>
+  </header>
 
  
 
   <main>
     <section class="container__about-company__main panel">
       <div class="about-company__main__header">
-        <div class="about-company__main__header__text"><h1>О компании</h1></div>
-        <figure>
-          <img src="./img/second/aboutCompany-logo.png" alt="">
-        </figure>
+        <div class="about-company__main__header__text"><h1>О компании</h1>
+        
+          <figure>
+            <img src="./img/second/aboutCompany-logo.png" alt="">
+          </figure>
+        </div>
+        
       </div>
       <div class="about-company__main__info">
         <div class="about-company__main__info__block">
@@ -135,6 +153,12 @@
             </p>
           </div>
           </div>
+          <div class="container__directions__logo">
+            <figure>
+              <img src="./img/first/Vector.png" alt="">
+            </figure>
+            <h1>Deconta E&C Group</h1>
+          </div>
       </article>
     </section>
   </main>
@@ -204,10 +228,17 @@
     </div>
   </div>
 </footer>
+<script type="text/javascript">
+  {
+  if (screen.width > 1023) 
+  {document.write ('<script type="text/javascript" src="js/scroll.js"></sc' + 'ript>');
+    document.write ('<script type="text/javascript" src="js/jquerycods.js"></sc' + 'ript>');
+  }};
+  </script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="js/jquerycods.js"></script>
+  <!-- <script src="js/jquerycods.js"></script> -->
   <script src="js/main.js"></script>
-  <script src="js/scroll.js"></script>
+
 </body>
 </html>

@@ -443,11 +443,11 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 } 
 .slider,.projects__title{display: none;}
 .carousel-3d {
-  padding: 20px;
+  /* padding: 20px; */
   
   -webkit-perspective: 500px;
   perspective: 500px;
-  width: 85%;
+  width: 100%;
   height:640px;
   display: flex;
   flex-direction: column;
@@ -463,7 +463,7 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 }
 .carousel-3d figure {
   margin: 0;
-  width: 1470px;
+  width: 89%;
   height:540px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -473,7 +473,7 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
   z-index: 1;
 }
 .carousel-3d figure div {
-  width: 1470px;
+  width: 100%;
   height: 100%;
   box-sizing: border-box;
   padding: 0;
@@ -500,6 +500,7 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 }
 .carousel-3d nav button {
   flex: 0 0 auto;
+  height: 1px;
   width: 140px;
   margin: 0 5px;
   cursor: pointer;
@@ -518,14 +519,16 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 }
 .nav.next{
 background:url(../img/project/arrow-right.png) no-repeat;
-background-size: 70% 40%;
-right:10px;
+background-size: 100% 60%;
+right:140px;
+transform:translateY(-50%);
 top: 50%;
 }
 .nav.prev{
   background:url(../img/project/arrow-left.png) no-repeat;
-  background-size: 70% 40%;
-  left:10px;
+  background-size: 100% 60%;
+  left:140px;
+  transform:translateY(-50%);
   top: 50%;
 }
 .carousel__background {

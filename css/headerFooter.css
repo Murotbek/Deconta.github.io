@@ -268,6 +268,7 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 @media screen and (min-width:1536px) and (max-width:1919px){
   header{
     min-width:1536px ;
+    padding-left: 105px;
   }
   footer{
     min-width:1536px;

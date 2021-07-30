@@ -1073,6 +1073,7 @@
     left: 50%;
     transform:translate(-50%);
     width:450px;
+    transition: all 1s ease;
     
   }
   .slide__text > h1{
@@ -1592,7 +1593,7 @@
     text-align: left;
     transform:translate(-50%);
     width:350px;
-    
+    transition: all 1s ease;
   }
   .slide__text > h1{
     font-size: 25px;
@@ -2126,7 +2127,7 @@ image-rendering: -webkit-optimize-contrast;
     text-align: left;
     transform:translate(-50%);
     width:290px;
-    
+    transition: all 1s ease;
   }
   .slide__text > h1{
     font-size: 25px;

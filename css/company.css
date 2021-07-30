@@ -26,7 +26,7 @@ html{
   scrollbar-width: none;
 }
 body{
-  width:1920px ;
+  min-width:1920px ;
   margin: 0;
   padding:0;
   background: #252525;
@@ -74,7 +74,7 @@ html::-moz-scrollbar {
   margin-right: 0px;
 }
 .container__about-company__main{
-  width: 1920px;
+  min-width: 1920px;
   height:100vh;
   display:grid;
   grid-template-rows: 1fr;
@@ -90,6 +90,13 @@ html::-moz-scrollbar {
   padding-left: 75px;
   padding-right: 75px;
 }
+.about-company__main__header__text{
+  display: flex;
+  flex-direction:row;
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+}
 .about-company__main__header__text > h1{
   font-size: 200px;
   line-height: 150%;
@@ -100,9 +107,9 @@ html::-moz-scrollbar {
   margin-left: 340px;
 
 }
-.about-company__main__header > figure{
+.about-company__main__header__text > figure{
   margin: 0;
-  right: 22px;
+  right: 9%;
   height:100%;
   position:absolute;
   width: 346px;
@@ -116,6 +123,7 @@ html::-moz-scrollbar {
   background:#FFFFFF;
   padding-left: 75px;
   padding-right: 75px;
+  color: #000000;
 }
 .about-company__main__info__block{
   width:50%;
@@ -124,7 +132,7 @@ html::-moz-scrollbar {
 
 .about-company__main__info__block  >h1{
   line-height: 150%;
-  color: #000000;
+  
   position: relative;
   padding-left: 150px;
   margin-bottom: 0;
@@ -142,7 +150,7 @@ html::-moz-scrollbar {
 .about-company__main__info__block > .main__info__block__year{
   font-size: 150px;
   /* line-height: 150%; */
-  color: #000000;
+ 
   opacity: 0.05;
   margin-left: 60px;
   width: 356px;
@@ -151,7 +159,7 @@ html::-moz-scrollbar {
   .main__info__block__ft{
     font-size: 25px;
     line-height: 150%;
-    color: #000000;
+    
     padding-left: 60px;
     margin-top: 0;
     margin-bottom: 10px;
@@ -160,7 +168,7 @@ html::-moz-scrollbar {
     font-weight: 300;
     font-size: 20px;
     line-height: 150%;
-    color: #000000;
+ 
     opacity: 0.7;
     padding-left: 60px;
     margin-top: 0;
@@ -168,6 +176,7 @@ html::-moz-scrollbar {
   }
   /* Goal */
   .container__about-company__goal{
+    min-width: 1920px;
     display: grid;
     grid-template-rows: 50%;
     height:100vh;
@@ -185,10 +194,11 @@ html::-moz-scrollbar {
   .about-company__goal__info__block{
     width:50%;
     padding-right: 30px;
+    color: #FFFFFF; 
   }
   .about-company__goal__info__block  >h1{
     line-height: 150%;
-    color: #FFFFFF;    
+       
     position: relative;
     padding-left: 150px;
     margin-bottom: 0;
@@ -206,7 +216,7 @@ html::-moz-scrollbar {
   .about-company__goal__info__block > .main__info__block__year{
     font-size: 150px;
     /* line-height: 150%; */
-    color: #FFFFFF;
+   
     opacity: 0.05;
     margin-left: 60px;
     width: 356px;
@@ -221,7 +231,7 @@ html::-moz-scrollbar {
     .goal__info__block__ft{
       font-size: 25px;
       line-height: 150%;
-      color: #FFFFFF;      
+        
       padding-left: 60px;
       margin-top: 0;
       margin-bottom: 10px;
@@ -230,7 +240,7 @@ html::-moz-scrollbar {
       font-weight: 300;
       font-size: 20px;
       line-height: 150%;
-      color: #FFFFFF;
+      
       opacity: 0.7;
       padding-left: 60px;
       margin-bottom: 37px;
@@ -257,7 +267,7 @@ html::-moz-scrollbar {
       font-size: 18px;
       line-height: 150%;
       text-transform: capitalize;
-      color: #FFFFFF;
+      
       display: flex;
       align-items: center;
       justify-content:center;
@@ -268,7 +278,7 @@ html::-moz-scrollbar {
    /* container direction */
 .container__directions{
   display: grid;
-  width: 1920px;
+  min-width: 1920px;
   height:100vh;
   grid-template-columns: 6fr 6fr;
   grid-template-rows: 100%;
@@ -330,4 +340,7 @@ html::-moz-scrollbar {
 }
 .container__directions__info{
   padding-top: 80px;
+}
+.container__directions__logo{
+  display:none;
 }
