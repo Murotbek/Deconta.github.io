@@ -445,8 +445,8 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 .carousel-3d {
   /* padding: 20px; */
   
-  -webkit-perspective: 500px;
-  perspective: 500px;
+  -webkit-perspective: 800px;
+  perspective: 800px;
   width: 100%;
   height:640px;
   display: flex;
@@ -463,7 +463,7 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 }
 .carousel-3d figure {
   margin: 0;
-  width: 89%;
+  width: 75%;
   height:540px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -501,7 +501,7 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 .carousel-3d nav button {
   flex: 0 0 auto;
   height: 1px;
-  width: 140px;
+  width: 100px;
   margin: 0 5px;
   cursor: pointer;
   color: #337AB7;
@@ -520,14 +520,14 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 .nav.next{
 background:url(../img/project/arrow-right.png) no-repeat;
 background-size: 100% 60%;
-right:140px;
+right:190px;
 transform:translateY(-50%);
 top: 50%;
 }
 .nav.prev{
   background:url(../img/project/arrow-left.png) no-repeat;
   background-size: 100% 60%;
-  left:140px;
+  left:190px;
   transform:translateY(-50%);
   top: 50%;
 }

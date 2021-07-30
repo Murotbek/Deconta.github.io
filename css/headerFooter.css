@@ -1046,7 +1046,30 @@ opacity: 0;
     text-decoration: none;
   }
 
-
+  button.fancy {
+    width: 100%;
+    padding: 1em 1.5em;
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+    height:80px;
+  }
+  button.fancy a{
+    font-size: 22px;
+    padding-left: 65px;
+  }
+  button.fancy::before {
+    width: 30px;
+    margin-left: 10px;
+}
+  button.fancy:hover::before {
+    width: 20px;
+    background: white;
+  }
+  button.fancy:hover a {
+   color: white;
+   padding-left: 40px;
+  }
 
 }
 @media screen and (min-width:320px) and (max-width:374px){
@@ -1317,6 +1340,29 @@ opacity: 0;
     text-decoration: none;
   }
 
-
+  button.fancy {
+    width: 100%;
+    padding: 1em 1.5em;
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+    height:60px;
+  }
+  button.fancy a{
+    font-size: 18px;
+    padding-left: 45px;
+  }
+  button.fancy::before {
+    width: 20px;
+    margin-left: 10px;
+}
+  button.fancy:hover::before {
+    width: 10px;
+    background: white;
+  }
+  button.fancy:hover a {
+   color: white;
+   padding-left: 40px;
+  }
 
 }
